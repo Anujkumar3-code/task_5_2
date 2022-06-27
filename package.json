@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.6.0",
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  },
+  "name": "book_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET PORT=8081 && nodemon src/index.js",
+    "build" : "babel src --out-dir build",
+    "watch" : "babel src --watch --out-dir build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "eslint": "^8.18.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
